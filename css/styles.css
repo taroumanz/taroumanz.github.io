@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: 400px;
+  width: 300px;
   margin: 8px auto;
   background: #fff;
   border-radius: 8px;
@@ -79,7 +79,7 @@ body {
 
 #result {
   position: absolute;
-  width: 350px;
+  width: 230px;
   background: #fff;
   padding: 30px;
   padding-top: 20px;
