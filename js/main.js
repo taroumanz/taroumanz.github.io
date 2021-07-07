@@ -11,15 +11,15 @@
     // {q: '世界一大きな湖は？', c: ['カスピ海', 'カリブ海', '琵琶湖'], a: 'カスピ海'},
     // {q: '2の8乗は？', c: ['1024', '64', '256'], a: '256'},
     // {q: '次のうち、最初にリリースされた言語は？', c: ['Python', 'JavaScript', 'HTML'], a: 'Python'},
-    {q: '肝機能を評価する指標となる検査項目は？', c: ['AST', 'TP', 'Alb'], a: 'AST'},
-    {q: '心不全を評価する指標となる検査項目は？', c: ['ALT', 'ALP', 'BNP'], a: 'BNP'},
-    {q: '腎機能を評価する指標となる検査項目は？', c: ['Ca', 'クレアチニン', 'クレアチン'], a: 'クレアチニン'},
-    {q: '心筋梗塞を評価する指標となる検査項目は？', c: ['γ-GT', 'BUN', 'トロポニン'], a: 'トロポニン'},
-    {q: '前立腺癌を評価する指標となる検査項目は？', c: ['CEA', 'PSA', 'AFP'], a: 'PSA'},
-    {q: '肝細胞癌を評価する指標となる検査項目は？', c: ['AFP', 'CA15-3', 'CA19-9'], a: 'AFP'},
-    {q: '栄養状態を評価する指標となる検査項目は？', c: ['Ch-E', 'eGFR', 'ALP'], a: 'Ch-E'},
-    {q: '炎症の程度を評価する指標となる検査項目は？', c: ['NH3', 'RBC', 'CRP'], a: 'CRP'},
-    {q: '糖尿病を評価する指標となる検査項目は？', c: ['TP', 'HbA1c', 'P'], a: 'HbA1c'},
+    {q: '肝機能の指標となる検査項目は？', c: ['AST', 'TP', 'Alb'], a: 'AST'},
+    {q: '心不全の指標となる検査項目は？', c: ['ALT', 'ALP', 'BNP'], a: 'BNP'},
+    {q: '腎機能の指標となる検査項目は？', c: ['Ca', 'クレアチニン', 'クレアチン'], a: 'クレアチニン'},
+    {q: '心筋梗塞の指標となる検査項目は？', c: ['γ-GT', 'BUN', 'トロポニン'], a: 'トロポニン'},
+    {q: '前立腺癌の指標となる検査項目は？', c: ['CEA', 'PSA', 'AFP'], a: 'PSA'},
+    {q: '肝細胞癌の指標となる検査項目は？', c: ['AFP', 'CA15-3', 'CA19-9'], a: 'AFP'},
+    {q: '栄養状態の指標となる検査項目は？', c: ['Ch-E', 'eGFR', 'ALP'], a: 'Ch-E'},
+    {q: '炎症の指標となる検査項目は？', c: ['NH3', 'RBC', 'CRP'], a: 'CRP'},
+    {q: '糖尿病の指標となる検査項目は？', c: ['TP', 'HbA1c', 'P'], a: 'HbA1c'},
   ]);
   let currentNum = 0;
   let isAnswerd;
@@ -50,7 +50,7 @@
 
   function setQuiz () {
     isAnswerd = false;
-    question.textContent = quizSet[currentNum].q;
+    question.textContent = `Q.${currentNum +1} ${quizSet[currentNum].q}`;
 
     while (choices.firstChild) {
       choices.removeChild(choices.firstChild);
