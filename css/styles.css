@@ -8,6 +8,7 @@ body {
 
 .container {
   width: 350px;
+  padding-top: 20px;
   border: 2px solid #ffd900;
   border-radius: 8px;
   background: rgb(255, 255, 255);
@@ -39,3 +40,11 @@ button {
   cursor: pointer;
 }
 
+.btn:hover {
+  opacity: .8;
+  user-select: none;
+}
+
+li {
+  margin: 8px;
+}
